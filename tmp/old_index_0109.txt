@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webサイトのサンプル">
+    <title>Webサイトのサンプル</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header class="noto-sans-bold">
+      <h1>ヘッダー</h1>
+
+      <nav class="navi">
+        <ul class="nav-menu">
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">ナビ</a></li>
+          <li><a href="#">ナビ</a></li>
+          <li><a href="#">ナビ</a></li>
+          <li><a href="#">ナビ</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+      <section class="cover">
+        <p class="noto-sans-bold">テキストが入ります</p>
+      </section>
+
+      <section class="grid-layout">
+        <div class="row">
+          <div class="column">
+            <div class="samune">サムネイル</div>
+            <p class="noto-sans-regular">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </div>
+          <div class="column">
+            <div class="samune">サムネイル</div>
+            <p class="noto-sans-regular">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </div>
+          <div class="column">
+            <div class="samune">サムネイル</div>
+            <p class="noto-sans-regular">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="samune">サムネイル</div>
+            <p class="noto-sans-regular">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </div>
+          <div class="column">
+            <div class="samune">サムネイル</div>
+            <p class="noto-sans-regular">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </div>
+          <div class="column">
+            <div class="samune">サムネイル</div>
+            <p class="noto-sans-regular">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>フッター</p>
+    </footer>
+  </body>
+
+</html>
