@@ -1,0 +1,292 @@
+@charset "UTF-8";
+/* フォントの導入 -----------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+/* コンテンツ幅に応じた可変レイアウト -----------------------------------------*/
+html {
+  font-size: 2.5641025641vw;
+  /* スマホ用（SP）：デザインカンプ幅390pxを基準にフォントサイズを可変 */
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 0.8333333333vw;
+    /* タブレット・PC用：1200pxのデザインカンプ幅を基準にフォントサイズを可変 */
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+    /* 1200px以上ではフォントサイズを固定（1rem = 10px） */
+  }
+}
+/* スムーススクロール -----------------------------------------*/
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+}
+
+/* 変数 -----------------------------------------*/
+/* 全体的な設定 -----------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  line-height: 1.375;
+  background-color: #fff;
+  color: #000;
+}
+
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+  line-height: 1;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* ヘッダーここから -----------------------------------------*/
+header {
+  height: 3.75rem;
+  background-color: #005BAC;
+  color: #ffffff;
+  padding: 20px 30px;
+  font-size: 1.25rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 75.625rem;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 0.8;
+}
+
+main p {
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1.875rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  /* 下線を消す */
+  color: #ffffff;
+  /* リンクの色を白に */
+  font-size: 1.25rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  /* ホバー時に下線を表示 */
+}
+
+/* ヘッダーここまで -----------------------------------------*/
+/* ヒーロービュー -----------------------------------------*/
+.hero {
+  height: 31.25rem;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ボタンのある所 -----------------------------------------*/
+.button {
+  max-width: 39rem;
+  padding: 0 1.6rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+  .button {
+    max-width: 120rem;
+    padding: 0 4rem;
+    margin-top: 2rem;
+  }
+}
+.button__container {
+  padding: 2rem 5rem;
+}
+
+.button__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .button__box {
+    flex-direction: row;
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
+}
+.button-lightgreen {
+  display: inline-block;
+  width: 25rem;
+  height: 4.8rem;
+  line-height: 4.8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: #77CB33;
+  color: #fff;
+  border-radius: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.button-lightgreen:hover {
+  opacity: 0.7;
+}
+
+.button-orange {
+  display: inline-block;
+  width: 25rem;
+  height: 4.8rem;
+  line-height: 4.8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: #F6AA00;
+  color: #fff;
+  border-radius: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.button-orange:hover {
+  opacity: 0.7;
+}
+
+.button-cyan {
+  display: inline-block;
+  width: 25rem;
+  height: 4.8rem;
+  line-height: 4.8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: #3AC8AD;
+  color: #fff;
+  border-radius: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.button-cyan:hover {
+  opacity: 0.7;
+}
+
+/* カードのある所 -----------------------------------------*/
+.grid-layout {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8.125rem;
+}
+
+.row {
+  display: flex;
+}
+
+.row h2 {
+  text-align: center;
+}
+
+.column {
+  flex: 1;
+  color: #ffffff;
+  padding: 2.5rem 1.25rem 0;
+}
+
+.samune {
+  height: 10rem;
+  font-size: 1.5rem;
+  background-color: #ffd166;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column p {
+  height: 11.25rem;
+  font-size: 1rem;
+  text-align: left;
+  background-color: #54bbef;
+  margin: 0;
+  padding: 0.625rem 1.25rem;
+}
+
+footer {
+  height: 6.25rem;
+  font-size: 1.5rem;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin-top: 3.5rem;
+}
+
+.navi-menu {
+  display: flex;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 64rem) {
+  .grid-layout {
+    padding: 5rem;
+  }
+}
+@media (max-width: 48rem) {
+  .glid-layout {
+    padding: 0 1.25rem;
+  }
+}/*# sourceMappingURL=style.css.map */
